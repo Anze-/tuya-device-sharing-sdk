@@ -141,6 +141,8 @@ class Manager:
         for listener in self.device_listeners:
             listener.update_device(device)
 
+    # <-------------------- THE NEXT F. IS WHERE device.status (which contains list of updated data) IS POPULATED
+    # Here is where the scaling could be integrated in the 'read' (?) direction if we want to keep all the code in the library
     def _on_device_report(self, device_id: str, status: list):
         device = self.device_map.get(device_id, None)
         if not device:

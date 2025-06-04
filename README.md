@@ -67,18 +67,22 @@ def scale_back(value, DPCode, device):
 ## Notes:
 
 https://github.com/Anze-/tuya-device-sharing-sdk/edit/main/tuya_sharing/
+
 provides: sdk library
 
 https://github.com/home-assistant/core/blob/dev/homeassistant/components/tuya/entity.py#L59
+
 provides:
-  scale_value: tuya -> real
-  scale_value_back: real -> tuya
+  >scale_value: tuya -> real
+  >
+  >scale_value_back: real -> tuya
 
 https://github.com/home-assistant/core/blob/dev/homeassistant/components/tuya/const.py#L93
 provides:
+```
    DPCode.TEMP_CURRENT =  "temp_current"  # Current temperature in °C  (Line 353)
    ...
-
+```
 
 
 

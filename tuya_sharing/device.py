@@ -67,7 +67,7 @@ class CustomerDevice(SimpleNamespace):
           status_range: Status value range set of the device
     """
 
-    id: str
+    id: str # <--------------------------- DEVICE ID is provided here
     name: str
     local_key: str
     category: str
@@ -91,7 +91,7 @@ class CustomerDevice(SimpleNamespace):
     function: dict[str, DeviceFunction] = {}
     status_range: dict[str, DeviceStatusRange] = {}
 
-    def __eq__(self, other):
+    def __eq__(self, other): #<---------------------------------- we also have a way to check if devices have same .id
         """If devices are the same one."""
         return self.id == other.id
 

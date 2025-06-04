@@ -1,3 +1,7 @@
+# Proposed quirk handling
+
+TODO: all
+
 # Tuya Device Sharing SDK
 
 A Python sdk for Tuya Open API, which provides basic IoT capabilities like device management capabilities, helping you create IoT solutions. 

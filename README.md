@@ -42,7 +42,7 @@ quirks = {	qid1:Quirk(...),
 #handle scaling in entity.py
 def scale(value, DPCode, device):
     #check if a quirk definition is present for the current device
-    q = quirks[device.id] if device id in quirks.keys() else None
+    q = quirks[device.id] if device.id in quirks.keys() else None
     if q:
         #check if scaling is defined for current DPCode (which here represents a data type of known measurement unit)
         tr = q.DPScaling[DPCode] if DPCode in q.DPScaling.keys() else None

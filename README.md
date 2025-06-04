@@ -2,9 +2,9 @@
 
 considering that the library does not perform any data modification/scaling the best approach to keep the logical separation would be:
 
-0) define quirks in the sdk library port
-1) define quirks for scaling specific ids in a quirks libary
-2) accept and process quirks in the scripts making use of the library
+0) define Quirk class in the sdk library port
+1) specify quirks for scaling some given ids in a 'quirks libary'
+2) accept and process quirks in the scripts making use of the library (e.g. homeassistant)
 
 ## TODO:
 
